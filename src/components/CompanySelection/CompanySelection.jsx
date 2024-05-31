@@ -5,7 +5,7 @@ import codeplayerslogo from '../assets/logo.png';
 import refresh from '../assets/refresh2.gif';
 import searchIcon from '../assets/search2.gif';
 
-const API_URL = 'https://Nithinreddy000.github.io/infinity-x-/api/companies';
+const API_URL = 'https://demopanda.onrender.com/pet/api/companies';
 const GUID_KEY = 'guid';
 
 const CompanySelection = () => {

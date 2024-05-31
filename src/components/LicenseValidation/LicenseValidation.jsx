@@ -17,7 +17,7 @@ const LicenseValidation = () => {
         setError('');
 
         try {
-            const response = await fetch('https://Nithinreddy000.github.io/infinity-x-/api/license-validation', {
+            const response = await fetch('https://demopanda.onrender.com/pet/api/license-validation', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
