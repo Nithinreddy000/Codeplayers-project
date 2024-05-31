@@ -5,7 +5,7 @@ import codeplayerslogo from '../assets/logo.png';
 import refresh from '../assets/refresh2.gif';
 import searchIcon from '../assets/search2.gif';
 
-const API_URL = 'https://demopanda.onrender.com/pet/api/companies';
+const API_URL = 'http://localhost:5000/api/companies';
 const GUID_KEY = 'guid';
 
 const CompanySelection = () => {
@@ -70,47 +70,11 @@ const CompanySelection = () => {
     };
 
     return (
-        <div className={styles.container}>
-            <div className={styles.hello}>
-                <img src={codeplayerslogo} alt='infinity erp logo'/>
-            </div>
-            <div className={styles.header}>
-                <h1 className={styles.min}>Select Company</h1>
-                <div className={styles.buttonsContainer}>
-                    <button onClick={toggleSearch} className={styles.searchButton}>
-                        <img className={styles.q} src={searchIcon} alt="search"/>
-                    </button>
-                    <button onClick={handleRefresh} className={styles.searchButton}>
-                        <img className={styles.q} src={refresh} alt="refresh"/>
-                    </button>
-                </div>
-            </div>
-            <input
-                type="text"
-                placeholder="Search Companies"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className={`${styles.searchInput} ${isSearchActive ? styles.active : ''}`}
-                style={{ display: isSearchActive ? 'block' : 'none' }}
-            />
-            {loading ? (
-                <p>Loading...</p>
-            ) : error ? (
-                <p className={styles.error}>{error}</p>
-            ) : (
-                <ul className={styles.companyList}>
-                    {filteredCompanies.map(company => (
-                        <li key={company.id} className={styles.companyItem} onClick={() => handleCompanyClick(company.id)}>
-                            <div className={styles.companyInfo}  >
-                                <img src={`data:image/png;base64, ${company.image}`} alt={company.name} className={styles.companyImage} style={{ marginRight: '10px' }  }/>
-                                <span className={styles.companyName}>{company.name}</span>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </div>
-    );
+          ////write your ui i.e frontend codes here///
+        
+        
+        ////write your ui i.e frontend codes here///
+        );
 };
 
 export default CompanySelection;

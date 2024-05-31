@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Nithinreddy000.github.io/infinity-x-",
+  "homepage": "https://Nithinreddy000.github.io/infinity12",
   "name": "infinity",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

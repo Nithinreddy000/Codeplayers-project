@@ -17,7 +17,7 @@ const LicenseValidation = () => {
         setError('');
 
         try {
-            const response = await fetch('https://demopanda.onrender.com/pet/api/license-validation', {
+            const response = await fetch('http://localhost:5000/api/license-validation', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,50 +40,11 @@ const LicenseValidation = () => {
     };
 
     return (
-        <div className={styles.container}>
-            <div className={styles.code}> 
-                <img src={codeplayerslogo} alt='codeplayers logo' className={styles.i}/>
-            </div>
-            <div className={styles.h}>
-                <img src={infinitylogo} alt='infinity erp logo' className={styles.j}/>
-                <h1 className={styles.er}>Infinity X</h1>
-            </div>
-            <div className={styles.f}>
-            <div className={styles.g}>
-            <h1 className={styles.he}>Login</h1>
-            <form onSubmit={handleLogin}>
-            <div className={styles.m}>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className={styles.inp}
-                    required
-                /><br></br>
-                </div>
-                <div className={styles.e}>
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className={styles.inp}
-                    required
-                /><br></br>
-                </div>
-                <div className={styles.r}>
-                <button className={styles.nit} type="submit" disabled={loading}>
-                    {loading ? 'Loading...' : 'Login'}
-                </button><br></br>
-                <a>Forgot Password</a>
-                </div>
-                {error && <p className={styles.error}>{error}</p>}
-            </form>
-            </div>
-        </div>
-        </div>
-    );
+          ////write your ui i.e frontend codes here///
+        
+        
+        ////write your ui i.e frontend codes here///
+        );
 };
 
 export default LicenseValidation;
